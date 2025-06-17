@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import "tailwindcss";
+
+
+@utility container {
+  padding-inline: 2rem;
+  margin-inline: auto;
+}
+
+@theme {
+
+  /* ## Colors */
+
+  --color-Neutral-0: hsl(0, 0%, 100%);
+  --color-Neutral-300: hsl(252, 6%, 83%);
+  --color-Neutral-500: hsl(245, 15%, 58%);
+  --color-Neutral-700: hsl(245, 19%, 35%);
+  --color-Neutral-900: hsl(248, 70%, 10%);
+
+  --color-Orange-500: hsl(7, 88%, 67%);
+  --color-Orange-700: hsl(7, 71%, 60%);
+
+  --color-Gradient-text-from: hsl(7, 86%, 67%);
+  --color-Gradient-text-to: hsl(0, 0%, 100%);
+
+  --font-Inconsolata: "Inconsolata", monospace;
+}
+
+* {
+  @apply box-border
+}
+
+body {
+  @apply text-base font-Inconsolata 
+}
+
+input {
+  @apply p-3 px-4 rounded-lg border border-Neutral-500 bg-Neutral-700/50 w-full transition-all ease-out hover:bg-Neutral-500/50 outline-Neutral-500 focus:outline-2 outline-offset-3 [&.error]:border-Orange-700
+}
+
+.avatar-upload {
+  @apply p-4 py-10 text-Neutral-300 cursor-pointer rounded-lg border-2 border-Neutral-500 transition-all ease-out hover:bg-Neutral-500/50 border-dashed bg-Neutral-700/50 [&.error]:border-Orange-700
+}
+
+.main-btn {
+  @apply capitalize p-2 px-4 rounded-lg bg-Orange-500 transition-all border-4 border-transparent border-b-Orange-500 ease-out hover:bg-Orange-700 text-Neutral-900 font-black text-xl cursor-pointer
+}
