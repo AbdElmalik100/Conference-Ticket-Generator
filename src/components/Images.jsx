@@ -9,6 +9,7 @@ const Images = () => {
                 <source media="(max-width:991px)" srcSet="/images/background-mobile.png" />
                 <img className="absolute top-0 left-0 -z-10 w-full h-full object-cover" src="/images/background-desktop.png" alt="Background Image" />
             </picture>
+            <img className="absolute top-18 w-[32%] right-0 z-10 max-md:w-32 max-md:top-12" src="/images/pattern-squiggly-line-top.svg" alt="Pattern Squiggly Line Top" />
             <img className="absolute top-0 left-0 -z-10 w-full h-full object-cover" src="/images/pattern-lines.svg" alt="Pattern Lines" />
             <img className="absolute top-1/2 left-4/6 -z-10" src="/images/pattern-circle.svg" alt="Pattern Circle" />
             <picture>
